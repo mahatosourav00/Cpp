@@ -27,7 +27,23 @@ blocks = 4434
  *ptr=  'C'
 
 Q5
-ans:
+ans:int countEven(int* arr,int size)
+48
+        {       
+49
+        int count=0;
+50
+        for(int i=0;i<size;i++)
+51
+        if(arr[i]%2==0)
+52
+        count++;
+53
+        
+54
+        return count;
+55
+        
 char s[10] = "abcde";
 char* cptr;
 
@@ -44,16 +60,19 @@ for(int i=9;i<=0;i--)
 
 Q6
 ans:
-
-int countEven(int* arr,int size)
-{
+int countEven(int* n, int size){
 	int count=0;
-	for(int i=0;i<size;i++)
-	if(arr[i]%2==0)
-	count++;
-	
+	for(int i=0; i<size; i++)
+	{	
+		if(*(n+i)%2==0)
+		{count++;}
+	}
 	return count;
 }
+
+
+
+
 
 Q7
 ans:
